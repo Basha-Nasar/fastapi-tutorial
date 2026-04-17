@@ -1,5 +1,5 @@
 import uuid
-from fastapi  import APIRouter, HTTPException, status
+from fastapi  import APIRouter, HTTPException, status, Query
 from app.schemas import UserCreate, UserOut, UserStatus, UserUpdate
 from app.storage import load_data, save_data
 
@@ -30,6 +30,16 @@ def create_user(user: UserCreate):
     return new_user
 
 
+@router.get('/search', response_model = list[UserOut])
+def search_users(query : str = Query(..., min_length=1)):
+    users = load_data()
+    result = []
+    for user in users:
+        if query.lower() in user['first_name'].lower() or query.lower() in user['last_name'].lower() or query.lower() in user['email'].lower():
+            result.append(user)
+    return result
+
+
 @router.get('/{user_id}', response_model=UserOut)
 def get_user(user_id : str):
     """Retrive user by id"""
@@ -38,7 +48,7 @@ def get_user(user_id : str):
         if user['id'] == user_id:
             return user
     raise HTTPException(status_code= status.HTTP_404_NOT_FOUND , detail = "User not found")
-        
+
 @router.put('/{user_id}' , response_model=UserOut)
 def update_user(user_id : str, payload : UserUpdate):
     users = load_data()
@@ -66,7 +76,8 @@ def delete_user(user_id : str):
     users = load_data()
     for index, user in enumerate(users):
         if user['id'] == user_id:
+            deleted_user = user.copy()
             users.pop(index)
             save_data(users)
-            return
+            return deleted_user
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND , detail="User Not Found")

@@ -20,3 +20,15 @@ def save_data(data):
     serializable = [item.model_dump() if hasattr(item, "model_dump") else item for item in data]
     with open(DATA_FILE , 'w') as f:
         json.dump(serializable, f, indent = 2)
+        
+        
+        
+def reset_data(data):
+    if DATA_FILE.exists():
+        with open(DATA_FILE, "w") as f:
+            json.dump(data, f, indent=2)
+    else:
+        save_data(data)
+    return 
+
+
