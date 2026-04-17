@@ -1,7 +1,7 @@
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
 from sqlalchemy.orm import declarative_base
 
-DATABASE_URL = "postgresql+psycopg://postgress:123456@localhost:5432/fastapi_tutorial"
+DATABASE_URL = "postgresql+psycopg://postgres:123456@localhost:5432/fastapi_tutorial"
 
 engine = create_async_engine(
     DATABASE_URL,
@@ -19,4 +19,9 @@ AsyncSessionLocal = async_sessionmaker(
 )
 
 Base = declarative_base()
+
+
+async def create_tables():
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
 
