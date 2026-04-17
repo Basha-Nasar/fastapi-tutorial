@@ -2,11 +2,17 @@ from fastapi import FastAPI
 from app.routes.users import router as users_router
 from app.middleware.timer import timer_middleware
 from fastapi.middleware.cors import CORSMiddleware
+from app.database import AsyncSessionLocal, engine
 
 app = FastAPI()
 
 app.middleware('http')(timer_middleware)
 app.include_router(users_router)
+
+
+async def get_db():
+    async with AsyncSessionLocal() as session:
+        yield session
 
 app.add_middleware(
     CORSMiddleware, 
