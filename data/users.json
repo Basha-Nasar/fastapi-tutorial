@@ -1,0 +1,142 @@
+[
+  {
+    "id": "54497c1d-9fbe-47f4-9478-2c8622df402e",
+    "first_name": "Nasar",
+    "last_name": "Basha",
+    "email": "nasar@izarsolutions.com",
+    "status": "active"
+  },
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "first_name": "Ahmed",
+    "last_name": "Khan",
+    "email": "ahmed.khan@example.com",
+    "status": "active"
+  },
+  {
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "first_name": "Sara",
+    "last_name": "Ali",
+    "email": "sara.ali@example.com",
+    "status": "active"
+  },
+  {
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "first_name": "Omar",
+    "last_name": "Hassan",
+    "email": "omar.hassan@example.com",
+    "status": "inactive"
+  },
+  {
+    "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+    "first_name": "Fatima",
+    "last_name": "Malik",
+    "email": "fatima.malik@example.com",
+    "status": "active"
+  },
+  {
+    "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+    "first_name": "Yusuf",
+    "last_name": "Ibrahim",
+    "email": "yusuf.ibrahim@example.com",
+    "status": "blocked"
+  },
+  {
+    "id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+    "first_name": "Layla",
+    "last_name": "Rahman",
+    "email": "layla.rahman@example.com",
+    "status": "active"
+  },
+  {
+    "id": "a7b8c9d0-e1f2-3456-abcd-567890123456",
+    "first_name": "Tariq",
+    "last_name": "Siddiqui",
+    "email": "tariq.siddiqui@example.com",
+    "status": "active"
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4567-bcde-678901234567",
+    "first_name": "Zainab",
+    "last_name": "Qureshi",
+    "email": "zainab.qureshi@example.com",
+    "status": "inactive"
+  },
+  {
+    "id": "c9d0e1f2-a3b4-5678-cdef-789012345678",
+    "first_name": "Bilal",
+    "last_name": "Chaudhry",
+    "email": "bilal.chaudhry@example.com",
+    "status": "active"
+  },
+  {
+    "id": "d0e1f2a3-b4c5-6789-defa-890123456789",
+    "first_name": "Mariam",
+    "last_name": "Javed",
+    "email": "mariam.javed@example.com",
+    "status": "active"
+  },
+  {
+    "id": "e1f2a3b4-c5d6-7890-efab-901234567890",
+    "first_name": "Khalid",
+    "last_name": "Ansari",
+    "email": "khalid.ansari@example.com",
+    "status": "deleted"
+  },
+  {
+    "id": "f2a3b4c5-d6e7-8901-fabc-012345678901",
+    "first_name": "Hana",
+    "last_name": "Yilmaz",
+    "email": "hana.yilmaz@example.com",
+    "status": "active"
+  },
+  {
+    "id": "a3b4c5d6-e7f8-9012-abcd-123456789012",
+    "first_name": "Samir",
+    "last_name": "Nasser",
+    "email": "samir.nasser@example.com",
+    "status": "active"
+  },
+  {
+    "id": "b4c5d6e7-f8a9-0123-bcde-234567890123",
+    "first_name": "Nour",
+    "last_name": "Farouk",
+    "email": "nour.farouk@example.com",
+    "status": "inactive"
+  },
+  {
+    "id": "c5d6e7f8-a9b0-1234-cdef-345678901234",
+    "first_name": "Hamza",
+    "last_name": "Sheikh",
+    "email": "hamza.sheikh@example.com",
+    "status": "active"
+  },
+  {
+    "id": "d6e7f8a9-b0c1-2345-defa-456789012345",
+    "first_name": "Aya",
+    "last_name": "Mostafa",
+    "email": "aya.mostafa@example.com",
+    "status": "active"
+  },
+  {
+    "id": "e7f8a9b0-c1d2-3456-efab-567890123456",
+    "first_name": "Rami",
+    "last_name": "Aziz",
+    "email": "rami.aziz@example.com",
+    "status": "blocked"
+  },
+  {
+    "id": "f8a9b0c1-d2e3-4567-fabc-678901234568",
+    "first_name": "Dina",
+    "last_name": "Saleh",
+    "email": "dina.saleh@example.com",
+    "status": "active"
+  },
+  {
+    "id": "a9b0c1d2-e3f4-5678-abcd-789012345679",
+    "first_name": "Karim",
+    "last_name": "Osman",
+    "email": "karim.osman@example.com",
+    "status": "active"
+  }
+]
